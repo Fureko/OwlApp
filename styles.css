@@ -1,136 +1,88 @@
 body {
-    background-color: #1a1a2e;
-    color: #e0e0e0;
-    font-family: century gothic, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://images2.alphacoders.com/126/thumb-1920-1264719.jpg'); /* Chemin vers votre image de fond */
-    background-size: cover; /* Pour couvrir toute la page */
-    background-position: center; /* Pour centrer l'image */
-    background-attachment: fixed; /* Pour que l'image reste fixe lors du défilement */
-    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+    background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+    background-attachment: fixed;
+    background-image: url('https://images2.alphacoders.com/126/thumb-1920-1264719.jpg')
 }
 
 header {
-    background-color: rgba(22, 54, 71, 0.8); /* Couleur avec transparence pour voir l'image de fond */
-    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 2px 5px #000;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header nav h1 {
+header h1 {
     margin: 0;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.hero {
-    background-color: rgba(15, 52, 96, 0.8); /* Couleur avec transparence */
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    color: #e0e0e0;
-}
-
-.hero p {
-    color: #a0a0a0;
+    font-size: 2em;
+    color: #ffffff;
 }
 
 main {
-    padding: 20px;
+    padding: 30px;
 }
 
 .app-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
 }
 
 .app-card {
-    background-color: rgba(15, 52, 96, 0.9); /* Couleur avec transparence */
-    border-radius: 8px;
-    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    width: 260px;
     padding: 20px;
-    width: 250px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.app-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
 
 .app-card img {
     width: 100%;
-    border-radius: 8px;
-}
-
-.app-card h3 {
-    color: #e0e0e0;
-}
-
-.app-card p {
-    color: #a0a0a0;
-}
-
-button {
-    background-color: #4745e9;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .button-link {
-    text-decoration: none; /* Supprime la décoration de texte par défaut */
-    color: inherit; /* Utilise la couleur de texte par défaut */
-}
-
-.button-link button {
-    background-color: #4745e9;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
+    display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
-    text-decoration: none; /* Supprime la décoration de texte sur le bouton */
-    display: inline-block; /* Assure que le bouton se comporte comme un élément de bloc */
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(78, 84, 200, 0.6);
+    transition: all 0.3s ease;
 }
 
-.button-link button:hover {
-    background-color: #d73753;
+.button-link:hover {
+    background: #d73753;
+    box-shadow: 0 0 20px rgba(215, 55, 83, 0.8);
 }
 
 footer {
-    background-color: rgba(22, 36, 71, 0.8); /* Couleur avec transparence */
-    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
-    color: #e0e0e0;
+    padding: 15px;
+    color: #ccc;
+    font-size: 0.9em;
+    margin-top: 40px;
 }
